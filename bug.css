@@ -1,0 +1,15 @@
+```javascript
+// Example showing an unexpected behavior with Tailwind's `@apply` directive
+
+.my-class {
+  @apply text-red-500;
+  /* Other styles */
+}
+
+/* ... later in your CSS ... */
+
+.my-class {
+  /* Overriding styles, but `text-red-500` might not apply correctly */
+  background-color: blue;
+}
+```
