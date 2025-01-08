@@ -1,0 +1,18 @@
+```css
+/* Solution 1: Using a more specific selector to avoid conflict */
+
+.my-class {
+  @apply text-red-500;
+  /* Other styles */
+}
+
+.my-class-container {
+  background-color: blue;
+}
+
+/* Solution 2: Using !important (use sparingly!)*/
+.my-class {
+  @apply text-red-500 !important;
+  background-color: blue;
+}
+```
